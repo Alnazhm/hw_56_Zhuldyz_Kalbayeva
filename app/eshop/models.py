@@ -30,7 +30,7 @@ class Product(models.Model):
         verbose_name = 'Продукт'
         verbose_name_plural = 'Продукты'
         ordering = ['category', 'title']
-        fields = ('title', 'description', 'balance', 'category', 'images_url', 'price')
+
 
     def delete(self, using=None, keep_parents=False):
         self.deleted_at = timezone.now()
